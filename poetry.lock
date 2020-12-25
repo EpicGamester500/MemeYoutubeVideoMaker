@@ -1,0 +1,202 @@
+[[package]]
+category = "main"
+description = "Python package for providing Mozilla's CA Bundle."
+name = "certifi"
+optional = false
+python-versions = "*"
+version = "2020.12.5"
+
+[[package]]
+category = "main"
+description = "Universal encoding detector for Python 2 and 3"
+name = "chardet"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "4.0.0"
+
+[[package]]
+category = "main"
+description = "Internationalized Domain Names in Applications (IDNA)"
+name = "idna"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "2.10"
+
+[[package]]
+category = "main"
+description = "Wrapper package for OpenCV python bindings."
+name = "opencv-python"
+optional = false
+python-versions = ">=3.6"
+version = "4.4.0.46"
+
+[[package]]
+category = "main"
+description = "PRAW, an acronym for `Python Reddit API Wrapper`, is a python package that allows for simple access to reddit's API."
+name = "praw"
+optional = false
+python-versions = ">3.5.3"
+version = "7.1.0"
+
+[package.dependencies]
+prawcore = ">=1.3.0,<2.0"
+update-checker = ">=0.17"
+websocket-client = ">=0.54.0"
+
+[package.extras]
+ci = ["coveralls"]
+dev = ["pre-commit", "black", "flake8", "pydocstyle", "sphinx (<3.0)", "sphinx-rtd-theme", "betamax (>=0.8,<0.9)", "betamax-matchers (>=0.3.0,<0.5)", "pytest (>=2.7.3)"]
+lint = ["black", "flake8", "pydocstyle", "sphinx (<3.0)", "sphinx-rtd-theme"]
+test = ["betamax (>=0.8,<0.9)", "betamax-matchers (>=0.3.0,<0.5)", "pytest (>=2.7.3)"]
+
+[[package]]
+category = "main"
+description = "Low-level communication layer for PRAW 4+."
+name = "prawcore"
+optional = false
+python-versions = ">=3.5"
+version = "1.5.0"
+
+[package.dependencies]
+requests = ">=2.6.0,<3.0"
+
+[package.extras]
+ci = ["coveralls"]
+dev = ["black", "flake8", "pre-commit", "pydocstyle", "betamax (>=0.8,<0.9)", "betamax-matchers (>=0.4.0,<0.5)", "betamax-serializers (>=0.2.0,<0.3)", "mock (>=0.8)", "pytest", "testfixtures (>4.13.2,<7)"]
+lint = ["black", "flake8", "pre-commit", "pydocstyle"]
+test = ["betamax (>=0.8,<0.9)", "betamax-matchers (>=0.4.0,<0.5)", "betamax-serializers (>=0.2.0,<0.3)", "mock (>=0.8)", "pytest", "testfixtures (>4.13.2,<7)"]
+
+[[package]]
+category = "main"
+description = "Python HTTP for Humans."
+name = "requests"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "2.25.1"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+chardet = ">=3.0.2,<5"
+idna = ">=2.5,<3"
+urllib3 = ">=1.21.1,<1.27"
+
+[package.extras]
+security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
+socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.15.0"
+
+[[package]]
+category = "main"
+description = "A python module that will check for package updates."
+name = "update-checker"
+optional = false
+python-versions = "*"
+version = "0.18.0"
+
+[package.dependencies]
+requests = ">=2.3.0"
+
+[package.extras]
+dev = ["black", "flake8", "pytest (>=2.7.3)"]
+lint = ["black", "flake8"]
+test = ["pytest (>=2.7.3)"]
+
+[[package]]
+category = "main"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+name = "urllib3"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
+version = "1.26.2"
+
+[package.extras]
+brotli = ["brotlipy (>=0.6.0)"]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
+
+[[package]]
+category = "main"
+description = "WebSocket client for Python. hybi13 is supported."
+name = "websocket-client"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.57.0"
+
+[package.dependencies]
+six = "*"
+
+[metadata]
+content-hash = "3a1a1eb4af481e74cd9d82d650f2b4dde60b0e866aaee29c4a45e8c4ba909af6"
+python-versions = "^3.8"
+
+[metadata.files]
+certifi = [
+    {file = "certifi-2020.12.5-py2.py3-none-any.whl", hash = "sha256:719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830"},
+    {file = "certifi-2020.12.5.tar.gz", hash = "sha256:1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"},
+]
+chardet = [
+    {file = "chardet-4.0.0-py2.py3-none-any.whl", hash = "sha256:f864054d66fd9118f2e67044ac8981a54775ec5b67aed0441892edb553d21da5"},
+    {file = "chardet-4.0.0.tar.gz", hash = "sha256:0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"},
+]
+idna = [
+    {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},
+    {file = "idna-2.10.tar.gz", hash = "sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6"},
+]
+opencv-python = [
+    {file = "opencv-python-4.4.0.46.tar.gz", hash = "sha256:d80db278a07f51811dbf0f9c31ff7cd5b2501822fb7a7587e71f9ff27d5c04bd"},
+    {file = "opencv_python-4.4.0.46-cp36-cp36m-macosx_10_13_x86_64.whl", hash = "sha256:14df77490c8aedceae74e660564d48c04761658aecc93895ac5e974006a89606"},
+    {file = "opencv_python-4.4.0.46-cp36-cp36m-manylinux2014_i686.whl", hash = "sha256:6b6d23de6d5ddc55e865ac8532bf8062b26ba70305fa1c87c671717027dcd370"},
+    {file = "opencv_python-4.4.0.46-cp36-cp36m-manylinux2014_x86_64.whl", hash = "sha256:6b1d85cbb64ce20ac5f79ad8e3e76a3dbff53d258c65f2fc0b9411321147a0be"},
+    {file = "opencv_python-4.4.0.46-cp36-cp36m-win32.whl", hash = "sha256:4af0053c6a70f127a52c26b112341826d3dbfce6955beb9044d3eabd7e14d1cd"},
+    {file = "opencv_python-4.4.0.46-cp36-cp36m-win_amd64.whl", hash = "sha256:135e05b69ab9665cbe2589f56e60895219bc2443a632bdc4bde72fb95eda1582"},
+    {file = "opencv_python-4.4.0.46-cp37-cp37m-macosx_10_13_x86_64.whl", hash = "sha256:51baebb0f8f3cae4cccd30daf018a5bb75cb759d5658aea29100d34cd5cac106"},
+    {file = "opencv_python-4.4.0.46-cp37-cp37m-manylinux2014_i686.whl", hash = "sha256:9659e80059c9f39728c7dcc22032dff0d1d467f07b6cd8e036613393e4b7c71a"},
+    {file = "opencv_python-4.4.0.46-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:f69a56e958ecb549ba84e0497a438080932b4d52ded441cec04d80afde71dc0a"},
+    {file = "opencv_python-4.4.0.46-cp37-cp37m-win32.whl", hash = "sha256:68a9ec7e32f82cab267b6f757d9862a9a930371062739f9d00472e7c850c5854"},
+    {file = "opencv_python-4.4.0.46-cp37-cp37m-win_amd64.whl", hash = "sha256:17581c68400f828700e5c6b3b082f50c781bf74cb9a7b972a04f05d26c8e894a"},
+    {file = "opencv_python-4.4.0.46-cp38-cp38-macosx_10_13_x86_64.whl", hash = "sha256:db874c65654465ef71d6e8618bed8c725722bc90624132b9512bf061abb4eec0"},
+    {file = "opencv_python-4.4.0.46-cp38-cp38-manylinux2014_i686.whl", hash = "sha256:8aeda9b2c37bf91fa88d67f09b85f2250661eec43d72184ec544783de204e96a"},
+    {file = "opencv_python-4.4.0.46-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:8a8ebd7ceebc0be9c14ca3e25a1c4ae086016b469848258e998247f2fc855314"},
+    {file = "opencv_python-4.4.0.46-cp38-cp38-win32.whl", hash = "sha256:e4c072cf4260063ebadc70e34d622fa1127a88e364475ed757709e249ebe990f"},
+    {file = "opencv_python-4.4.0.46-cp38-cp38-win_amd64.whl", hash = "sha256:6022609b67f9c0f14e6807e782660d1d1be94d4f0c7bc1794d7d8f600014acb2"},
+    {file = "opencv_python-4.4.0.46-cp39-cp39-macosx_10_13_x86_64.whl", hash = "sha256:117dbb2fd184de28d831f14c1da17864efcee7bb7895e43adf40f5e1da9137fb"},
+    {file = "opencv_python-4.4.0.46-cp39-cp39-manylinux2014_i686.whl", hash = "sha256:c1382209a771ca8a25fe89d4a2377875538c6ed3cf8745280e65636cbd0988f2"},
+    {file = "opencv_python-4.4.0.46-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:744e9ae2fb4c8574e6d4a762146b4d0984bdec60b98480fc54a363c03a07a1ac"},
+    {file = "opencv_python-4.4.0.46-cp39-cp39-win32.whl", hash = "sha256:7fe81d08df4eb5dc4c6aa5f09888b6fd390fce5fa7d5624a98cac890b9aa6181"},
+    {file = "opencv_python-4.4.0.46-cp39-cp39-win_amd64.whl", hash = "sha256:0548981fe189e0d57b9cc65066b66fd70d4bc84ea906f349a63d9098e1b911c6"},
+]
+praw = [
+    {file = "praw-7.1.0-py3-none-any.whl", hash = "sha256:6b93ad1e53385c68753203ec87f4d0053b2425b09fc8813847800a542efdfe6c"},
+    {file = "praw-7.1.0.tar.gz", hash = "sha256:fb55e46203a771342da7cbe144fbcd8c61d825719ce1025bdd72112194a0228f"},
+]
+prawcore = [
+    {file = "prawcore-1.5.0-py3-none-any.whl", hash = "sha256:672d8a2faa12b44307874b2acfdd27f9cbaa5fa37bada4b34e36277224e6d8ed"},
+    {file = "prawcore-1.5.0.tar.gz", hash = "sha256:1f1eafc8a65d671f9892354f73142014fbb5d3a9ee621568c662d0a354e0578b"},
+]
+requests = [
+    {file = "requests-2.25.1-py2.py3-none-any.whl", hash = "sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e"},
+    {file = "requests-2.25.1.tar.gz", hash = "sha256:27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"},
+]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]
+update-checker = [
+    {file = "update_checker-0.18.0-py3-none-any.whl", hash = "sha256:cbba64760a36fe2640d80d85306e8fe82b6816659190993b7bdabadee4d4bbfd"},
+    {file = "update_checker-0.18.0.tar.gz", hash = "sha256:6a2d45bb4ac585884a6b03f9eade9161cedd9e8111545141e9aa9058932acb13"},
+]
+urllib3 = [
+    {file = "urllib3-1.26.2-py2.py3-none-any.whl", hash = "sha256:d8ff90d979214d7b4f8ce956e80f4028fc6860e4431f731ea4a8c08f23f99473"},
+    {file = "urllib3-1.26.2.tar.gz", hash = "sha256:19188f96923873c92ccb987120ec4acaa12f0461fa9ce5d3d0772bc965a39e08"},
+]
+websocket-client = [
+    {file = "websocket_client-0.57.0-py2.py3-none-any.whl", hash = "sha256:0fc45c961324d79c781bab301359d5a1b00b13ad1b10415a4780229ef71a5549"},
+    {file = "websocket_client-0.57.0.tar.gz", hash = "sha256:d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010"},
+]
